@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notif-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.notification {
+    width: 360px;
+    height: 80px;
+    border-radius: 4px;
+    background: rgba(116, 26, 26, 0.9);
+    box-shadow: -3px 0px 0px 0px rgba(151, 8, 8, 0.9) inset;
+    margin-bottom: 4px;
+    opacity: 1;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.5em;
+    transition: all 0.3s ease;
+    animation: blink 4s linear infinite alternate;
+    margin-top: 50px;
+    display: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgba(26, 26, 116, 0.9);
+    }
+    25% {
+        background-color: rgba(116, 26, 26, 0.9);
+    }
+    50% {
+        background-color: rgba(26, 26, 116, 0.9);
+    }
+    75% {
+        background-color: rgba(116, 26, 26, 0.9);
+    }
+    100% {
+        background-color: rgba(26, 26, 116, 0.9);
+    }
+}
+
+
+.notification.officer-down {
+    animation: myfirst 5s linear 0s infinite alternate;
+}
+
+.content {
+    padding: 2% 2% 0% 2%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#marker {
+    float: right;
+    font-size: 2.2em;
+    line-height: 2em;
+    padding-top: 0px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+#code {
+    float: left;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.4em;
+    padding: 0.4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    background: rgb(223, 19, 104);
+    border-radius: 4px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+#alert-name {
+    float: left;
+    font-size: 1.15em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.4em;
+    margin: 0 0 0 5px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+#alert-info {
+    margin-top: 22px;
+    font-size: 1em;
+    line-height: calc(1.5em + 2px);
+    font-weight: 500;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+#alert-info i {
+    vertical-align: middle;
+    padding-right: 6px;
+    margin-bottom: 2px;
+    left: -1px;
+    min-width: 13px;
+    text-align: center;
+}
+
+#alert-info span {
+    text-overflow: hidden;
+    white-space: nowrap;
+}
+
+#street-name {
+    float: left;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1.4em;
+    margin: 8px 5px 5px 5px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.50);
+}
